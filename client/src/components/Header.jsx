@@ -54,18 +54,18 @@ export default function Header() {
 
             <ul className='flex gap-4'>
               <Link to='/'>
-              <li className='hidden sm:inline text-slate-700 hover:underline hover:cursor-pointer'>Home</li>
+              <li className='sm:inline text-slate-700 hover:underline hover:cursor-pointer'>Home</li>
               </Link>
 
               <Link to='/about'>
-              <li className='hidden sm:inline text-slate-700 hover:underline hover:cursor-pointer'>About</li>
+              <li className='sm:inline text-slate-700 hover:underline hover:cursor-pointer'>About</li>
               </Link>
 
               <Link to='/profile'>
                 {currentUser ? 
                 <img src={currentUser.photo} className='rounded-full h-7 w-7 object-cover'/>
                 : 
-                <li className='hidden sm:inline text-slate-700 hover:underline hover:cursor-pointer'>Sign In</li>
+                <li className='sm:inline text-slate-700 hover:underline hover:cursor-pointer'>Sign In</li>
                 }
               </Link>
             </ul>
